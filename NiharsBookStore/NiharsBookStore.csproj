@@ -12,11 +12,23 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.27" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.27" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NiharsBooks.DataAccess\NiharsBooks.DataAccess.csproj" />
     <ProjectReference Include="..\NiharsBooks.Models\NiharsBooks.Models.csproj" />
+    <ProjectReference Include="..\NiharsBooks.Utility\NiharsBooks.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Customer\Data\" />
+    <Folder Include="Areas\Customer\Models\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

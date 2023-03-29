@@ -63,7 +63,7 @@ namespace NiharsBookStore
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");  //This the default route pattern which is likely going to be change.
+					pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");  //This the default route pattern which is likely going to be change.
 				endpoints.MapRazorPages();
 			});
 		}
