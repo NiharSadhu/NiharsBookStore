@@ -25,3 +25,5 @@ while adding a new bootstrap file to the folder for the newly selected theme.
 Then, I updated my layout_cshtml code and added a dropdown menu in it.
 
 Assignment 2
+
+New migration file name: aspnet-NiharsBookStore-AF5D1E1F-F128-4430-B5F2-95683BB80D40
