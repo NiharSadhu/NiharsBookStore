@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NiharsBookStore.Models;
+using NiharsBookStore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NiharsBookStore.Controllers
+namespace NiharsBookStore.DataAccess.DataAccess.DataAccess.Controllers
 {
 	public class HomeController : Controller
 	{
