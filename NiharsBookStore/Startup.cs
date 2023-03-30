@@ -7,12 +7,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using NiharsBooks.DataAccess.Repository;
 using NiharsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NiharsBooks.DataAccess.Repository.IRepository;
+
 
 namespace NiharsBookStore
 {
@@ -33,8 +35,10 @@ namespace NiharsBookStore
 					Configuration.GetConnectionString("DefaultConnection")));
 			services.AddDefaultIdentity<IdentityUser>() //options => options.SignIn.RequireConfirmedAccount = true       (removed this)
 				.AddEntityFrameworkStores<ApplicationDbContext>();
+			services.AddScoped<IUnitofWork, UnitOfWork>();
 			services.AddControllersWithViews();
 			services.AddRazorPages();
+			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

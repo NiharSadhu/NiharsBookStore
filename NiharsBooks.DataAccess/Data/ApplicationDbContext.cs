@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NiharsBooks.DataAccess.Repository;
 using NiharsBooks.Models;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,6 @@ namespace NiharsBookStore.DataAccess.Data
 		{
 		}
 		public DbSet<Category> Categories { get; set; }
+		public DbSet<SP_Call> sP_Calls { get; set; }
 	}
 }
