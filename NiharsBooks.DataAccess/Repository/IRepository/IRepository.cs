@@ -16,6 +16,10 @@ namespace NiharsBooks.DataAccess.Repository.IRepository
             string includeProperties = null
             );
 
+        T GetFirstOrDefault(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null );
+
         void Add(T entity);
         void Remove(int id);
 

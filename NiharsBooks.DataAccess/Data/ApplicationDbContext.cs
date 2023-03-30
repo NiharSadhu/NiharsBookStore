@@ -15,6 +15,6 @@ namespace NiharsBookStore.DataAccess.Data
 		{
 		}
 		public DbSet<Category> Categories { get; set; }
-		public DbSet<SP_Call> sP_Calls { get; set; }
+		
 	}
 }
