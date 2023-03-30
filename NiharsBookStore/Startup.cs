@@ -35,7 +35,8 @@ namespace NiharsBookStore
 					Configuration.GetConnectionString("DefaultConnection")));
 			services.AddDefaultIdentity<IdentityUser>() //options => options.SignIn.RequireConfirmedAccount = true       (removed this)
 				.AddEntityFrameworkStores<ApplicationDbContext>();
-			services.AddScoped<IUnitofWork, UnitOfWork>();
+
+			services.AddScoped<IUnitOfWork, UnitOfWork>();
 			services.AddControllersWithViews();
 			services.AddRazorPages();
 			

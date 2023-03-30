@@ -19,9 +19,9 @@ namespace NiharsBooks.DataAccess.Repository
         }
 
         public ICategoryRepository Category { get; private set; }
-        public SP_Call SP_Call { get; private set; }
+        public ISP_Call SP_Call { get; private set; }
 
-        ISP_Call IUnitOfWork.SP_Call => throw new NotImplementedException();
+       
 
         public void Dispose()
         {

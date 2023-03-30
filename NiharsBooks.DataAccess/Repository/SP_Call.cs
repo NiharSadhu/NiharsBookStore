@@ -46,7 +46,8 @@ namespace NiharsBooks.DataAccess.Repository
 
         public Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedurename, DynamicParameters param = null)
         {
-            using (SqlConnection sqlCon= new SqlConnection(ConnectionString)) { 
+            using (SqlConnection sqlCon= new SqlConnection(ConnectionString))
+            { 
                 sqlCon.Open();
                 var result = SqlMapper.QueryMultiple(sqlCon, procedurename, commandType: System.Data.CommandType.StoredProcedure);
                 var item1 = result.Read<T1>().ToList();
