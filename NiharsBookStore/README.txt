@@ -14,3 +14,43 @@ The following day, on March 3 at 15:14, I resumed work on my project. At 15:23, 
 I updated the original bootstrap file name to bootstrap_bk.css while adding a new bootstrap file to the folder for the newly selected theme.
 
 Then, I updated my layout_cshtml code and added a dropdown menu in it.
+
+Assignment 2
+
+    I built the application to check if it was still working.
+    
+    I created a migrations file and modified the database name, then added the migration file using the NuGet Package Manager Console.
+    
+    I updated the database via PM Console and ran the application.
+    
+    I added a new table to the DB by creating a Category Model and pushed it to the DB.
+    
+    Next, I added a new class file to the .Models project and modified it.
+    
+    I added the migration file via PM Console, updated the database, confirmed the new Categories table via the SQL SOE, and pushed the commits.
+    After creating the Category.cs file, I added it to the ApplicationDbContext.
+    
+    I created a new folder named 'Repository' and added an 'IRepository' folder inside it.
+    I added an IRepository.cs interface to the folder itself and modified it to perform CRUD operations on the Category class.
+    I encountered some errors in a particular file, so I used the using statement to view the potential fixes and implement the interface.
+    I modified the code to create constructors and dependency injection (DI).
+    Next, I created individual repos for category and all potential models to be added in the future, including CategporyRepository.cs and ICategporyRepository.cs.
+    I modified the CategporyRepository.cs file and the ICategporyRepository.cs interface accordingly.
+    Using .NET LINQ, I retrieved the first or default category object and passed the id as a generic entity that matched the category ID.
+
+New migration file name: aspnet-NiharsBookStore-AF5D1E1F-F128-4430-B5F2-95683BB80D40
+
+
+    Added ISP_Calls.cs interface in the IRepository folder and implemented it in SP_Call.cs class.
+    
+    Added IUnitOfWork interface in the IRepository folder and implemented it in a new class.
+    Added a new CategoryController.cs in the Areas/Admin folder and modified the code to access IUnitOfWork.
+    Created a new Views folder with the same name as the controller and added a new Index view to it.
+    Moved the "Category" link to the Content Management drop-down in _Layout.cshtml.
+    Modified UpSert.cshtml to add asp-action and added @title variable and @section call to Scripts to validate input.
+    Created an Upsert POST action method in the CategoryController.cs file, removed some methods from CategoryRepository.cs, and moved the _unitOfWork.Save() method with the return.
+    Added an HTTPDelete API call and delete method in category.js.
+    Added delete functionality with onclick event to the Delete function in category.js.
+    Added the (Delete)url function code.
+    Data entered by the user into the table is not displaying in the database.
+
