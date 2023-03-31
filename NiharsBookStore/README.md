@@ -48,3 +48,17 @@ Assignment 2
     Using .NET LINQ, I retrieved the first or default category object and passed the id as a generic entity that matched the category ID.
 
 New migration file name: aspnet-NiharsBookStore-AF5D1E1F-F128-4430-B5F2-95683BB80D40
+
+
+    Added ISP_Calls.cs interface in the IRepository folder and implemented it in SP_Call.cs class.
+    
+    Added IUnitOfWork interface in the IRepository folder and implemented it in a new class.
+    Added a new CategoryController.cs in the Areas/Admin folder and modified the code to access IUnitOfWork.
+    Created a new Views folder with the same name as the controller and added a new Index view to it.
+    Moved the "Category" link to the Content Management drop-down in _Layout.cshtml.
+    Modified UpSert.cshtml to add asp-action and added @title variable and @section call to Scripts to validate input.
+    Created an Upsert POST action method in the CategoryController.cs file, removed some methods from CategoryRepository.cs, and moved the _unitOfWork.Save() method with the return.
+    Added an HTTPDelete API call and delete method in category.js.
+    Added delete functionality with onclick event to the Delete function in category.js.
+    Added the (Delete)url function code.
+    Data entered by the user into the table is not displaying in the database.
