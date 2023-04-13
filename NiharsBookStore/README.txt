@@ -73,3 +73,29 @@ New migration file name: aspnet-NiharsBookStore-AF5D1E1F-F128-4430-B5F2-95683BB8
 • Added CoverType to UnitOfWork and IUnitofWork
 • Push CoverType to the Database (Create migration and update the DB)
 
+
+2:01
+
+Performed CRUD operations on Cover Type
+• Added Cover Type to NavBar
+• Added CoverType Controller with all required Action Methods
+• Cover Type Index View to use DataTables
+• Cover Type Upsert View takes care of creating and updating CoverType
+• The delete CoverType is done using the API Call.
+
+
+2:18
+
+Added Migration for the product
+
+2:36
+
+Added Product to the Repository
+ Added IProductRepository
+Interface
+Added ProductRepository Class
+(note modifications to the
+Update method)
+Added Product to UnitOfWork and
+IUnitofWork
+
