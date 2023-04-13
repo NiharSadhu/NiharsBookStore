@@ -99,3 +99,70 @@ Update method)
 Added Product to UnitOfWork and
 IUnitofWork
 
+
+3:01
+Added Product Controller
+• To the Areas > Admin >
+Controllers to perform
+the CRUD operations
+• Added the
+IWebHostEvironment
+call and its using
+statement to the
+Microsoft.AspNetCore.
+Hosting (note the
+changes to the public
+ProductController
+method.
+
+
+
+
+3:12
+
+Created a ViewModel in
+the Models project to
+hold the Product object
+and select list for
+Category and CoverType
+• Modify the
+ProductVM class so it
+is public and intall the
+Microsoft.AspNetCore.
+Mvc.ViewFeatures
+package.
+
+3:55
+
+Modified the ProductController so the IActionResult Upsert calls to the
+ProductVM view model, include the using statements to the ViewModels folder and
+Microsoft.AspNetCore.Mvc.Rendering
+
+Commented out the
+Upsert post method
+for now Modify the API call to
+include the Category
+and CoverType
+properites
+• Add an Index view
+• Copy the Index.cshtml
+code from
+Views/Category and
+modify to the Product
+List header, Create
+New Product and add
+the following
+properties – Title /
+ISBN / Price / Author /
+Category and
+reference a new
+product.js file.
+• Copy/Paste the
+category.js and
+rename to product.js
+(modify the URL to
+point to Product)
+• Modify the
+_Layout.cshtml to add
+a new link to Product
+

@@ -23,6 +23,8 @@ namespace NiharsBooks.DataAccess.Repository
 
         public ICoverTypeRepository CoverType { get; private set; }
 
+        public IProductRepository Product { get; private set; }
+
        
 
         public void Dispose()
