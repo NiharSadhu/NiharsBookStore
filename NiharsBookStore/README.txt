@@ -54,3 +54,22 @@ New migration file name: aspnet-NiharsBookStore-AF5D1E1F-F128-4430-B5F2-95683BB8
     Added the (Delete)url function code.
     Data entered by the user into the table is not displaying in the database.
 
+
+
+
+    1:08
+    Created Cover Type CRUD with the exact same methods used for Category CRUD
+    • Added CoverType.cs in the Model’s folder
+    • CoverType Model
+    •  with ID and,
+    • Name
+
+
+    1:38
+
+    Added CoverType to the Repository
+• Added CoverTypeRepository Class
+• Added ICoverTypeRepository Interface
+• Added CoverType to UnitOfWork and IUnitofWork
+• Push CoverType to the Database (Create migration and update the DB)
+
