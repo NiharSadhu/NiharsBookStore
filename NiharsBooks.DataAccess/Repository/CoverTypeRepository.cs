@@ -18,12 +18,15 @@ namespace NiharsBooks.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(Category category)
+      
+       
+
+        public void Update(CoverType coverType)
         {
-            var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
             if (objFromDb == null)
             {
-                objFromDb.Name = category.Name;
+                objFromDb.Name = coverType.Name;
                 // _db.SaveChanges();
             }
         }
