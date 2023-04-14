@@ -1,5 +1,6 @@
 ﻿
 using NiharsBooks.DataAccess.Repository.IRepository;
+using NiharsBooks.Models;
 using NiharsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace NiharsBooks.DataAccess.Repository
             _db = db;
             Category = new CategoryRepository(_db);
             SP_Call = new SP_Call(_db);
+            CoverType = new CoverTypeRepository(_db);
+            
         }
 
         public ICategoryRepository Category { get; private set; }
