@@ -19,6 +19,7 @@ namespace NiharsBooks.DataAccess.Repository
             SP_Call = new SP_Call(_db);
             CoverType = new CoverTypeRepository(_db);
             
+            
         }
 
         public ICategoryRepository Category { get; private set; }
