@@ -1,4 +1,5 @@
-﻿using NiharsBooks.Models;
+﻿using NiharsBooks.DataAccess.Repository.IRepository;
+using NiharsBooks.Models;
 using NiharsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace NiharsBooks.DataAccess.Repository
 {
-    public class ProductRepository : Repository<Product>
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
         public ProductRepository(ApplicationDbContext db) : base(db)

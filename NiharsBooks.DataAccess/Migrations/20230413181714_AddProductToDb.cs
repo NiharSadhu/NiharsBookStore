@@ -31,8 +31,8 @@ namespace NiharsBooks.DataAccess.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_products_CoverTypes_CategoryId",
-                        column: x => x.CategoryId,
+                        name: "FK_products_CoverTypes_CoverTypeId",
+                        column: x => x.CoverTypeId,
                         principalTable: "CoverTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -42,6 +42,11 @@ namespace NiharsBooks.DataAccess.Migrations
                 name: "IX_products_CategoryId",
                 table: "products",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+               name: "IX_products_CoverTypeId",
+               table: "products",
+               column: "CoverTypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
