@@ -1,4 +1,4 @@
-﻿2023-02-03
+﻿2023-04-03
 1505
 Author's Name: Nihar Sadhu
 
@@ -162,3 +162,56 @@ Modify the _Layout.cshtml to add a new link to Product
 
 21:55
 Fixing few errors in the CoverTypeRepository
+
+
+Assignment 3.3
+
+date: 2023-04-19
+
+1:20
+
+Later, I continued to expand
+
+the wwwroot > images > products
+folder by including a new folder and a
+subfolder alongside it.
+
+
+Additionally, the product Upsert Post action
+function is located inside the ProductController setup folder. 
+I attempted to run the programme
+while the activities were taking place, but it displayed numerous errors, 
+
+
+
+
+3:40
+
+I discovered the error—the reaso
+n the system was throwing up so man
+y errors for me was beacuse a typing error 
+in covertype.
+
+
+
+5:20
+
+After spending some time trying to find a solution,
+I finally came to the conclusion that I could fix
+the error by entering the sql database and making certain modifications. 
+
+All the issues I was experiencing
+vanished after I changed the name "Categoory" to "CoverType"!
+
+After that, I tried running the
+application, and everything went very smoothly! 
+
+
+7:40
+
+
+I made the product's index.cshtml as the home page. 
+
+The ProductList should always be the first page
+to load when the page loads. attempting to devise methods for searching through it.
+
