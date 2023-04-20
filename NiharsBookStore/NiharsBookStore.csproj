@@ -27,9 +27,4 @@
     <Folder Include="Areas\Customer\Models\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\img\plus-solid.svg" />
-    <None Include="wwwroot\img\trash-solid.svg" />
-  </ItemGroup>
-
 </Project>
