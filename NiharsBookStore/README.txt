@@ -1,4 +1,4 @@
-﻿2023-04-03
+﻿2023-03-03
 1505
 Author's Name: Nihar Sadhu
 
@@ -215,3 +215,8 @@ I made the product's index.cshtml as the home page.
 The ProductList should always be the first page
 to load when the page loads. attempting to devise methods for searching through it.
 
+
+2022-04-21
+
+2:06
+Made changes in the home page to show the product list.
