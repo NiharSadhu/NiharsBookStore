@@ -8,7 +8,7 @@ added a themed template based on the "Lux" theme from bootswatch.com, and added 
 In order to perform CRUD operations on the Category class, a Category Model, a new table, and a new folder named "Repository" were all built.
 IRepository.cs was made to handle CRUD operations on the Category class, and separate repositories were made for the category and other potential future models.
 
-    created the ISP_Calls.cs interface and added it to the SP_Call.cs class in the IRepository folder.
+created the ISP_Calls.cs interface and added it to the SP_Call.cs class in the IRepository folder.
 IRepository folder was expanded to include the IUnitOfWork interface, which was then used in a new class.
 The same techniques used to create Category CRUD were utilised to create Cover Type CRUD. CoverType.cs was added to the Models folder along with CoverTypeRepository and ICoverTypeRepository Interface.
 UnitOfWork and IUnitOfWork now include CoverType, Updated the database and created a migration for CoverType.
