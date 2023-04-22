@@ -21,7 +21,7 @@ I also added a comment to line 65 of Startup.cs.
  
 I resumed work on my project. At 15:23,
 I visited bootswatch.com to find appropriate themed 
-templates for my project. I decided on the "Flatly" theme and navigated 
+templates for my project. I decided on the "Lux" theme and navigated 
 to the roots folder > lib > bootstrap > dist > css.
 
 I updated the original bootstrap file name to bootstrap_bk.
